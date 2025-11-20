@@ -1,15 +1,15 @@
-☁️ Hybrid Cloud Storage Manager (MERN + MinIO + AWS)
+**☁️ Hybrid Cloud Storage Manager (MERN + MinIO + AWS)**
 A full-stack MERN application that provides a seamless interface for uploading files to a local object storage server (MinIO) with the option to replicate data to the public cloud (AWS S3) on-demand.
 This project leverages Docker to containerize the local infrastructure (Database, Storage, and Caching).
 
-🚀 Features
+**🚀 Features**
 Local-First Storage: Files are uploaded immediately to a self-hosted MinIO server (S3 compatible) running in a Docker container.
 On-Demand Replication: Users can choose specific files to replicate/sync to a live AWS S3 bucket.
 Metadata Management: File details (size, type, upload date, replication status) are stored in MongoDB.
 Responsive UI: Built with React.js for a clean user experience.
 Containerized Infrastructure: Redis, MongoDB, and MinIO are orchestrated using Docker.
 
-🛠️ Tech Stack
+**🛠️ Tech Stack**
     FrontendReact.js (Create React App / Vite)Axios (API requests)CSS/Tailwind (Styling)
     BackendNode.js & Express.js
     AWS SDK (For interacting with S3)
@@ -18,13 +18,13 @@ Containerized Infrastructure: Redis, MongoDB, and MinIO are orchestrated using D
     MongoDB: NoSQL database for metadata.
     Redis: Used for caching/session management or job queues.
 
-📋 Prerequisites
+**📋 Prerequisites**
 Before running this project, ensure you have the following installed:
     Node.js (v14+ recommended)
     Docker Desktop (Must be running)
     AWS Account (With an S3 Bucket created and IAM credentials)
 
-⚙️ Environmental Setup1. 
+**⚙️ Environmental Setup1. **
 AWS Configuration
 Create an IAM User in AWS with AmazonS3FullAccess (or specific bucket permissions) and note down the:
     Access Key ID
